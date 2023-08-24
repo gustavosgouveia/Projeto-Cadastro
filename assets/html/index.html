@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <div class="container">
@@ -12,13 +14,14 @@
           <h1>Entrar</h1>
 
             <div class="label-float">
-                <input type="text">
+                <input type="text" required>
                 <label for="">Usuário</label>
              </div>
 
             <div class="label-float">
-                <input type="password">
-                <label for="">Senha</label>
+                <input type="password" id="senha" required>
+                <label for="senha">Senha</label>
+                <i class="fa fa-eye" aria-hidden="true"></i>
             </div>
             
             <div class="justify-center">
@@ -30,10 +33,11 @@
             </div>
 
             <div>
-                <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
+                <p>Não tem uma conta? <a href="../html/registrar.html">Cadastre-se</a></p>
             </div>
 
         </div>
     </div>
+  <script src="../js/index.js"></script>  
 </body>
 </html>
