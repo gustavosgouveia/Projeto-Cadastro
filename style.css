@@ -13,6 +13,10 @@ header{
     display: flex;
     justify-content: center;
 }
+form{
+    padding: 10px;
+    padding-top: 40px;
+}
 body{
     background-color: rgba(207, 207, 207, 0.671);
 }
@@ -20,7 +24,6 @@ input, textarea{
     border: none;
     padding: 5px;
     border-radius: 5px;
-
 }
 .input{
     display: flex;
@@ -42,11 +45,6 @@ select{
 .group{
     display: flex;
     gap: 10px;
-}
-
-form{
-    padding: 10px;
-    padding-top: 40px;
 }
 .generate-button{
     display: flex;
@@ -70,6 +68,6 @@ form{
     color: white;
     cursor: pointer;
 }
-.code{
+.bar-code{
     width: 100%;
 }
