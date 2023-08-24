@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #819ce1;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: rgba(207, 207, 207, 0.671);
+}
+input, textarea{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.min-input{
+    width: 30%;
+}
+label{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+select{
+    padding: 5px;
+    border-radius: 5px;    
+}
+.group{
+    display: flex;
+    gap: 10px;
+}
+
+form{
+    padding: 10px;
+    padding-top: 40px;
+}
+.generate-button{
+    display: flex;
+    padding: 5px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    width: 55px;
+}
+.save-button{
+    display: flex;
+    justify-content: end;
+}
+.save-button button {
+    padding: 8px;
+    background-color: #819ce1;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.code{
+    width: 100%;
+}
