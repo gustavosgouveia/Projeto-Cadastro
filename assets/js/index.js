@@ -12,5 +12,5 @@ btn.addEventListener("click", ()=>{
 let form = document.getElementById("enterForm")
 form.addEventListener("submit", (e)=>{
   e.preventDefault()
-window.location.href = "/assets/html/produtos.html"
+window.location.href = "/projeto-cadastro/assets/html/produtos.html"
 })
