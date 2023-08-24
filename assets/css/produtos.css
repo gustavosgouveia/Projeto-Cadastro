@@ -5,9 +5,11 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+:root{
+    --corPadrao: #082934;
+}
 header{
-    background-color: #819ce1;
+    background-color: var(--corPadrao);
     color: white;
     padding: 10px;
     display: flex;
@@ -62,7 +64,7 @@ select{
 }
 .save-button button {
     padding: 8px;
-    background-color: #819ce1;
+    background-color: var(--corPadrao);
     border-radius: 5px;
     border: none;
     color: white;

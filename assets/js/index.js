@@ -9,3 +9,8 @@ btn.addEventListener("click", ()=>{
     inputSenha.setAttribute("type", "password")
   }
 })
+let form = document.getElementById("enterForm")
+form.addEventListener("submit", (e)=>{
+  e.preventDefault()
+window.location.href = "/assets/html/produtos.html"
+})

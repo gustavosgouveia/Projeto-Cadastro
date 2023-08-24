@@ -21,3 +21,9 @@ btnConfirm.addEventListener("click", ()=>{
     inputConfirmSenha.setAttribute("type", "password")
   }
 })
+
+let form = document.getElementById("registerForm")
+form.addEventListener("submit", (e)=>{
+  e.preventDefault()
+window.location.href = "/assets/html/index.html"
+})

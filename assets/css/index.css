@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
-    --corPrincipal: #272262;
-    --corSecundaria: #4028a0;
-    --corFundo: #819ce1;
+    --corPadrao: #082934;
+    --corPrincipal: white;
+    --corSecundaria: #279e96;
+    --corFundo: #279e96;
 }
 *{
     margin: 0px;
@@ -23,19 +24,29 @@ body{
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    overflow: hidden;
 }
 .card{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--corPadrao);
+    max-width: 700px;
+    min-width: 300px;
     padding: 30px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.205);
-     height: 300px;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.img{
+    display: flex;
+    justify-content: center;
 }
 h1{
-    text-align: center;
+    padding-top: 25%;
+     text-align: center;
     color: var(--corPrincipal);
+    font-size: 2.5em;
 }
 .label-float input{
+    color: white;
     width: 100%;
     padding: 5px 5px;
     display: inline-block;
@@ -54,6 +65,7 @@ h1{
     padding-top: 13px;
     margin-top: 5%;
     margin-bottom: 5%;
+    font-weight: bold;
 }
 
 .label-float input:focus{
@@ -81,15 +93,17 @@ button{
     border-color: var(--corPrincipal);
     color: var(--corPrincipal);
     padding: 7px;
-    font-weight: bold;
     font-size: 12pt; 
     margin-top: 20px;
-    border-radius: 4px;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     cursor: pointer;
     outline: none;
+
 }
 button:hover{
-    background-color: #4028a0a8;
+    background-color:#279e96;
     color: #fff;
 }
 .justify-center{
@@ -97,8 +111,8 @@ button:hover{
     justify-content: center;
 }
 hr{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 60%;
 }
 p{
@@ -107,13 +121,13 @@ p{
     text-align: center;
 }
 a{
-    color: #7a3077;
+    color: var(--corSecundaria);
     font-weight: bold;
     text-decoration: none;
     transition: all .3s ease-out;
 }
 a:hover{
-    color: var(--corPrincipal);
+    color: #40d1c7;
 }
 .fa-eye{
     position: absolute;
