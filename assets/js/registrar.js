@@ -25,5 +25,5 @@ btnConfirm.addEventListener("click", ()=>{
 let form = document.getElementById("registerForm")
 form.addEventListener("submit", (e)=>{
   e.preventDefault()
-window.location.href = "/assets/html/index.html"
+window.location.href = "/projeto-cadastro/assets/html/index.html"
 })
