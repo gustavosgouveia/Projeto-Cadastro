@@ -39,7 +39,7 @@ function entrar(){
   })
 
   if(usuario.value == userValid.user && senha.value == userValid.senha && usuario.value != "" && senha.value != ""){
-    window.location.href = "../html/produtos.html"
+    window.location.href = "projeto-cadastro/assets/html/produtos.html"
 
     let token = Math.random().toString(16).substring(2) + Math.random.toString(16).substring(2)
     localStorage.setItem("token", token)

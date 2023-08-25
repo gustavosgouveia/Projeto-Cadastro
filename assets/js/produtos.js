@@ -5,5 +5,5 @@ if(localStorage.getItem("token") == null){
 
 function sair(){
     localStorage.removeItem("token")
-    window.location.href = "assets/html/index.html"
+    window.location.href = "projeto-cadastro/assets/html/index.html"
 }

@@ -96,7 +96,7 @@ function cadastrar(){
     msgError.innerHTML = ''
 
     setTimeout(()=>{
-      window.location.href = "/assets/html/index.html"
+      window.location.href = "/projeto-cadastro/assets/html/index.html"
     }, 1000)
    
   } else {
