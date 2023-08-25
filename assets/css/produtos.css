@@ -74,3 +74,16 @@ select{
 .bar-code{
     width: 100%;
 }
+.exit-button{
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+}
+.exit-button button {
+    padding: 8px;
+    background-color: var(--corPadrao);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

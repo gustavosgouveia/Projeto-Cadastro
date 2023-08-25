@@ -3,6 +3,8 @@ if(localStorage.getItem("token") == null){
     window.location.href = "../html/index.html"
 }
 
+let btn = document.querySelector(".exit-button")
+
 function sair(){
     localStorage.removeItem("token")
     window.location.href = "projeto-cadastro/assets/html/index.html"
