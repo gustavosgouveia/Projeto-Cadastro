@@ -10,25 +10,27 @@
 </head>
 <body>
     <div class="container">
-        <form class="card" id="enterForm">
+        <div class="card">
             <div class="img">
                 <img src="../../imagens/logo-agilez.png" alt="">
             </div>
           <h1>Login</h1>
 
+          <div id="msgError" ></div>
+
             <div class="label-float">
-                <input type="text" required>
-                <label for="">Usuário</label>
+                <input type="text" id="usuario" required>
+                <label id="userLabel" for="usuario">Usuário</label>
              </div>
 
             <div class="label-float">
                 <input type="password" id="senha" required>
-                <label for="senha">Senha</label>
+                <label id="senhaLabel" for="senha">Senha</label>
                 <i class="fa fa-eye" aria-hidden="true"></i>
             </div>
             
             <div class="justify-center">
-                <button>Entrar</button>
+                <button onclick="entrar()">Entrar</button>
             </div>
 
              <div class="justify-center">
@@ -39,7 +41,7 @@
                 <p>Não tem uma conta? <a href="../html/registrar.html">Cadastre-se</a></p>
             </div>
 
-        </form>
+        </div>
     </div>
   <script src="../js/index.js"></script>  
 </body>

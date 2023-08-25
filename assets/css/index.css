@@ -136,3 +136,12 @@ a:hover{
     cursor: pointer;
     color: var(--corPrincipal);
 }
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+    display: none;
+}

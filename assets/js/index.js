@@ -9,8 +9,50 @@ btn.addEventListener("click", ()=>{
     inputSenha.setAttribute("type", "password")
   }
 })
-let form = document.getElementById("enterForm")
-form.addEventListener("submit", (e)=>{
-  e.preventDefault()
-window.location.href = "/projeto-cadastro/assets/html/produtos.html"
-})
+
+function entrar(){
+  let usuario = document.querySelector("#usuario")
+  let userLabel = document.querySelector("#userLabel")
+
+  let senha = document.querySelector("#senha")
+  let senhaLabel = document.querySelector("#senhaLabel")
+
+  let msgError = document.querySelector("#msgError")
+  let listaUser = []
+
+  let userValid = {
+    email: "", 
+    user: "",
+    senha: ""
+  }
+
+  listaUser = JSON.parse(localStorage.getItem("listaUser"))
+
+  listaUser.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid = {
+        email: item.emailCad,
+        user: item.userCad,
+        senha: item.senhaCad
+      }
+    }
+  })
+
+  if(usuario.value == userValid.user && senha.value == userValid.senha && usuario.value != "" && senha.value != ""){
+    window.location.href = "../html/produtos.html"
+
+    let token = Math.random().toString(16).substring(2) + Math.random.toString(16).substring(2)
+    localStorage.setItem("token", token)
+  } else {
+    userLabel.setAttribute("style", "color: red")
+    usuario.setAttribute("style", "border-color: red")
+
+    senhaLabel.setAttribute("style", "color: red")
+    senha.setAttribute("style", "border-color: red")
+
+    msgError.setAttribute("style", "display: block")
+    msgError.innerHTML = "Usuario ou senha incorretos"
+    usuario.focus()
+  }
+
+}
