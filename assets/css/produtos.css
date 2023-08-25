@@ -14,6 +14,7 @@ header{
     padding: 10px;
     display: flex;
     justify-content: center;
+    min-width: 300px;
 }
 form{
     padding: 10px;
