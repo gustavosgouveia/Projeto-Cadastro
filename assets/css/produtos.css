@@ -16,11 +16,9 @@ header{
     padding: 10px;
     display: flex;
     justify-content: center;
-    
-}
-header > h1{
     min-width: 280px;
 }
+
 #welcome{
 color: rgba(0, 0, 0, 0.781);
 padding: 10px;
