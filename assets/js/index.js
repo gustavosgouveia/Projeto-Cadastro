@@ -43,6 +43,8 @@ function entrar(){
 
     let token = Math.random().toString(16).substring(2) + Math.random.toString(16).substring(2)
     localStorage.setItem("token", token)
+
+    localStorage.setItem("userLogado", JSON.stringify(userValid))
   } else {
     userLabel.setAttribute("style", "color: red")
     usuario.setAttribute("style", "border-color: red")

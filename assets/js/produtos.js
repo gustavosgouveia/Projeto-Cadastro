@@ -1,11 +1,14 @@
+let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+
+let logado = document.querySelector('#logged')
+logado.innerHTML = `Seja bem vindo, ${userLogado.user}!`
+
 if(localStorage.getItem("token") == null){
     alert("Você precisa estar logado para acessar essa página!")
     window.location.href = "../html/index.html"
 }
 
-let btn = document.querySelector(".exit-button")
-
 function sair(){
     localStorage.removeItem("token")
-    window.location.href = "projeto-cadastro/assets/html/index.html"
+    window.location.href = "../html/index.html"
 }
