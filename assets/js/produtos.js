@@ -1,7 +1,7 @@
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 
 let logado = document.querySelector('#logged')
-logado.innerHTML = `Seja bem vindo, ${userLogado.user}!`
+logado.innerHTML = `Seja bem-vindo(a), ${userLogado.user}!`
 
 if(localStorage.getItem("token") == null){
     alert("Você precisa estar logado para acessar essa página!")
