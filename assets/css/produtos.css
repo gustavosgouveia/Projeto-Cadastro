@@ -35,7 +35,6 @@ form{
 }
 body{
     background-color: rgba(207, 207, 207, 0.671);
-    overflow: hidden;
 }
 input, textarea{
     border: none;
