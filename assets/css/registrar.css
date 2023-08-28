@@ -24,7 +24,6 @@ body{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    overflow: hidden;
 }
 .card{
     background-color: var(--corPadrao);
@@ -40,7 +39,7 @@ body{
     justify-content: center;
 }
 h1{
-    padding-top: 110px;
+    padding-top: 40px;
     text-align: center;
     color: var(--corPrincipal);
     font-size: 2.5em;
