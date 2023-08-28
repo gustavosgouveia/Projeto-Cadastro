@@ -20,20 +20,22 @@ let msgSuccess = document.querySelector("#msgSuccess")
 let btn = document.querySelector("#verSenha")
 let btnConfirm = document.querySelector("#verConfirmSenha")
 
-email.addEventListener("keyup", ()=>{
-  if(email.value.length <= 14) {
-    labelEmail.setAttribute("style", "color: red")
-    labelEmail.innerHTML = "Email *Insira um email válido"
-    email.setAttribute("style", "border-color : red")
-    validEmail = false
-  }else {
-    labelEmail.setAttribute("style", "color: green")
-    labelEmail.innerHTML = "Email"
-    email.setAttribute("style", "border-color : green")
-    validEmail = true
-  }
-})
+email.addEventListener("keyup", () => {
+  const emailValue = email.value.trim(); 
+  const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
+  if (!regex.test(emailValue)) {
+    labelEmail.style.color = "red";
+    labelEmail.innerHTML = "Email *Insira um email válido";
+    email.style.borderColor = "red";
+    validEmail = false;
+  } else {
+    labelEmail.style.color = "green";
+    labelEmail.innerHTML = "Email";
+    email.style.borderColor = "green";
+    validEmail = true;
+  }
+});
 usuario.addEventListener("keyup", ()=>{
   if(usuario.value.length <= 4) {
     labelUsuario.setAttribute("style", "color: red")
