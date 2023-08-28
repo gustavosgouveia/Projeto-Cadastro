@@ -92,12 +92,13 @@ button{
     color: var(--corPrincipal);
     padding: 7px;
     font-size: 12pt; 
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 20px;
     padding-left: 50px;
     padding-right: 50px;
     cursor: pointer;
     outline: none;
+
 }
 button:hover{
     background-color:#279e96;
