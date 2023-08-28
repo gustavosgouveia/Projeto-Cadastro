@@ -53,6 +53,7 @@ body{
 
 .table-position{
     margin: 10px;
+   overflow-x: auto;
 }
 
 .custom-table {
@@ -72,6 +73,11 @@ body{
 border: none;
 cursor: pointer;
 background-color: white;
+padding: 8px;
+border-radius: 3px;
+}
+.delete:hover{
+    background-color: #ccc;
 }
 
 #exit-button{
