@@ -9,8 +9,17 @@ if(localStorage.getItem("token") == null){
 }
 
 
-function salvar(){
+ window.onload = ()=> {
+    let produtos = JSON.parse(localStorage.getItem("dadosProduto"))
+    if(produtos==null){
+        produtos = [] 
+    }
+     const newId = produtos.length+1
+     document.getElementById("idCodigo").value = newId
+ }
+ 
 
+function salvar(){
     let idCodigo = document.getElementById("idCodigo")
     let nomeProduto = document.getElementById("nomeProduto")
     let precoCusto = document.getElementById("precoCusto")
@@ -40,4 +49,10 @@ function salvar(){
 function sair(){
     localStorage.removeItem("token")
     window.location.href = "../html/index.html"
+}
+function generateBarcode(code) {
+    JsBarcode("#barcode", code, {
+        format: "CODE128", // Formato do código de barras (pode ser alterado)
+        displayValue: true // Mostrar o valor do código de barras abaixo
+    });
 }
