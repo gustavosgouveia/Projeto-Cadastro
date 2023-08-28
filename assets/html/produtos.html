@@ -14,34 +14,34 @@
          <h2 id="logged"></h2>
     </div>
 
-     <form action="">
+     <form action="" id="productForm">
         <div class="group">
             <div class="input min-input">
                 <label for="">ID - Código:</label>
-                <input type="text">
+                <input type="text" id="idCodigo">
             </div>
             <div class="input">
                 <label for="">Nome do Produto:</label>
-                <input type="text">
+                <input type="text" id="nomeProduto">
             </div>
         </div>
         <div class="group">
             <div class="input">
                 <label for="">Preço de Custo:</label>
-                <input type="text">
+                <input type="text" id="precoCusto">
             </div>
             <div class="input">
-                <label for="">Preço de Venda:</label>
-                <input type="text">
+                <label for="" >Preço de Venda:</label>
+                <input type="text" id="precoVenda">
             </div>
         </div>
             <div class="input">
-                <label for="">Quantidade em Estoque</label>
-                <input type="text">
+                <label for="" >Quantidade em Estoque</label>
+                <input type="text" id="quantidadeEstoque">
             </div>
         <div class="input">
-            <label for="">Unidade de Medida: </label>
-            <select name="" id="">
+            <label for="" >Unidade de Medida: </label>
+            <select name="" id="unidadeMedida">
                 <option value=""></option>
                 <option value="">Quilograma</option>
                 <option value="">Unidade</option>
@@ -51,7 +51,7 @@
         </div>
         <div class="input">
             <label for="">Informaçoes Adicionais:</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="informacoesAdicionais" cols="30" rows="10"></textarea>
         </div>
         <div class="input">
             <label for="">Código de Barras:</label>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="save-button">
-            <button>Salvar</button>
+            <button onclick="salvar()">Salvar</button>
         </div>
         
         <div id="exit-button">
